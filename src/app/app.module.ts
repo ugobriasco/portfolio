@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/do';
 
 
 import { routing } from './app.routing';
