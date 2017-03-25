@@ -10,10 +10,10 @@ export class ContactService {
 	cfg;
 
   constructor(private http:Http) { 
-  	this.http.get('../app.config.json').subscribe(res => this.cfg = res.json());
+  	this.http.get('./app/app.config.json').subscribe(res => this.cfg = res.json());
   }
 
-  public send(sender,subject,message){
+  public send(sender:string,subject:string,message:string){
 
   	if(sender && subject && message) {
   		let headers = new Headers({
