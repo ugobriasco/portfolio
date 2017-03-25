@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Http, Response, Headers, RequestOptions} from '@angular/http';
+import {Http, Response, Headers, RequestOptions, URLSearchParams} from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
 
@@ -9,32 +9,66 @@ export class ContactService {
 
 	cfg;
 
-  constructor(private http:Http) { 
+  constructor(private http: Http) { 
   	this.http.get('./app/app.config.json').subscribe(res => this.cfg = res.json());
   }
 
-  public send(sender:string,subject:string,message:string){
+  // sendEmail(sender:string,subject:string,message:string){
 
-  	if(sender && subject && message) {
-  		let headers = new Headers({
-  			"Content-Type": "application/x-www-form-urlencoded",
-  			"Authorization":"Basic " + this.cfg.mailgun.apiKey
-  		});
-  		let options = new RequestOptions({headers: headers});
-  		let body = "from="+ sender +"&to=" + this.cfg.mailgun.email + "&subject=" + subject + "&text" + message;
-  		let url = "http://api.mailgun.net/v3/" + this.cfg.mailgun.url + "/message";
+  // 	if(sender && subject && message) {
 
-  		return this.http.post(url,body,options)
-  		.map(result => result.json())
-  		.do(result => console.log("RESULT: ", JSON.stringify(result)))
-  		.subscribe(result => {
-  			console.log("message Sent!");
-  			sender ="";
-  			subject="";
-  			message="";
-  		}, error => console.log(error));
-  	}
+  //     let headers = new Headers();
+  //     headers.append("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+  //     headers.append("Authorization","Basic " + this.cfg.mailgun.apiKey);
+
+  // 		let body = "from="+ sender +"&to=" + this.cfg.mailgun.email + "&subject=" + subject + "&text=" + message;
+  // 		let url = "https://api.mailgun.net/v3/" + this.cfg.mailgun.url + "/messages";
+
+  // 		return this.http.post(url,body,{headers: headers});
+  // 	}
+  // }
+
+  // send(sender: string, subject: string, message: string) {
+  //   var requestHeaders = new Headers();
+  //   var body = new URLSearchParams()
+  //   body.append("from", sender)
+  //   body.append("to", this.cfg.mailgun.email)
+  //   body.append("subject", subject)
+  //   body.append("html", message)
+  //   requestHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+  //   return this.http.post(
+  //     "https://api:***your api secret ***@api.mailgun.net/v3/" + "***your domain***" + "/messages",
+  //     body, {headers: requestHeaders})
+  // }
+
+
+  getEmailFrom(fromName, fromEmail, message) {
+    const headers = new Headers();
+    headers.append("Authorization", "Basic "+ this.cfg.mailgun.apiKey);
+    headers.append("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    const recieverMail = "ugo.briasco@gmail.com";
+    const subject = "error report submitted by interactive screen";
+    const recieverName = "CSC SERVICE";
+    const url = "https://api.mailgun.net/v3/sandbox483ba75d9caa4092a6929e08d9bd2d9a.mailgun.org/messages";
+    const body = "from="+fromName+"<"+fromEmail+">&to="+recieverName+"<"+recieverMail+">&subject="+subject+"&text="+message;
+    return this.http.post(url,body,{headers:headers});
   }
+
+  // sendEmailTo(recipient: string, subject: string, message: string) {
+  //   var requestHeaders = new Headers();
+  //   var body = new URLSearchParams()
+  //   body.append("from", '***your email***')
+  //   body.append("to", recipient)
+  //   body.append("subject", subject)
+  //   body.append("html", message)
+  //   requestHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+  //   return this.http.post(
+  //     "https://api:***your api secret ***@api.mailgun.net/v3/" + "***your domain***" + "/messages",
+  //     body, {headers: requestHeaders})
+  // }
+
+
+
 
 
   private handleError(err){

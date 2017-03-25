@@ -23,6 +23,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PressComponent } from './press/press.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProfileComponent } from './profile/profile.component';
     PortfolioComponent,
     FooterComponent,
     NavbarComponent,
-    ProfileComponent
+    ProfileComponent,
+    PressComponent
   ],
   imports: [
     routing,
