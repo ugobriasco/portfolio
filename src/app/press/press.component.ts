@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TwitterService } from 'ng2-twitter';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-press',
@@ -7,23 +9,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PressComponent implements OnInit {
 
-  constructor() { }
+  title ="'Black box' technique may lead to more powerful #AI https://t.co/jVahjmIUZz http://www.google.com via @engadget";
+  result='';
+  cfg;
+
+  constructor(
+    private twitter: TwitterService,
+    private http: Http
+    ) {
+    this.http.get('./app/data/config.json').subscribe(res => this.cfg = res.json());
+
+  } 
 
   ngOnInit() {
   }
+
   ngAfterViewInit () {
-            !function(d,s,id){
-                var js: any,
-                    fjs=d.getElementsByTagName(s)[0],
-                    p='https';
-                if(!d.getElementById(id)){
-                    js=d.createElement(s);
-                    js.id=id;
-                    js.src=p+"://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js,fjs);
-                }
-            }
-            (document,"script","twitter-wjs");
-    }
+            this.getHomeTimeline();
+  }
+
+  //gather ttwits
+  getHomeTimeline(){  
+      this.twitter.get(
+          'https://api.twitter.com/1.1/statuses/user_timeline.json',
+          {
+            count: 10
+          },
+          {
+            consumerKey: "6bKoszKhLCqE4WGUWlnxncGkt",
+            consumerSecret: "bvaHXQDrejktH0DPi6BB2NUF0tpEncdiDsbKtyEjKFQxB2hhNN"
+          },
+          {
+            token: "341947997-makcDnZsyDUaRDx41UrLmbV0sjxEVswvkAVFfOBn",
+            tokenSecret: "dtdYN3ff6Qy1NSOPMG2rhdEms37oh5K4HLUuJTlLspAUk"
+          }
+      ).subscribe((res)=>{
+          this.result = res.json().map(tweet => tweet);
+      });
+  }
+
+
+
 
 }

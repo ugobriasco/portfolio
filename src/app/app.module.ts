@@ -13,9 +13,12 @@ import 'rxjs/add/operator/do';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
-import { LinkedinService } from './shared/linkedin.service';
+
+import { TwitterLinksPipe } from './shared/pipes/links.pipe';
+
 import { ContactService } from './contact/contact.service';
 import { NavService } from './shared/nav.service';
+import { TwitterService } from 'ng2-twitter';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
@@ -25,8 +28,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PressComponent } from './press/press.component';
 
+
+//Since RC6, all Directives and Pipes should be moved to module's declarations.
+
+
 @NgModule({
   declarations: [
+    TwitterLinksPipe,
     AppComponent,
     ContactComponent,
     HomeComponent,
@@ -46,9 +54,9 @@ import { PressComponent } from './press/press.component';
     ReactiveFormsModule
   ],
   providers: [
-  LinkedinService,
   ContactService,
-  NavService
+  NavService,
+  TwitterService
 
   ],
   bootstrap: [AppComponent]
