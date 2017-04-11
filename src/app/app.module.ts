@@ -13,8 +13,8 @@ import 'rxjs/add/operator/do';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
-
 import { TwitterLinksPipe } from './shared/pipes/links.pipe';
+import { ApiService } from './shared/api.service';
 
 import { ContactService } from './contact/contact.service';
 import { NavService } from './shared/nav.service';
@@ -54,6 +54,7 @@ import { PressComponent } from './press/press.component';
     ReactiveFormsModule
   ],
   providers: [
+  ApiService,
   ContactService,
   NavService,
   TwitterService

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../shared/api.service';
 
 @Component({
   selector: 'app-resume',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+	jobs;
+	edu;
+
+  constructor(private api: ApiService) { }
 
   ngOnInit() {
+  	this.api.getResume().subscribe((res) => {
+  		this.jobs = res.json().jobs;
+  		this.edu = res.json().education;
+  	});
+
   }
 
 }
