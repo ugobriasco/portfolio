@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { MasonryModule } from 'angular2-masonry';
 
 
 import 'rxjs/add/operator/map';
@@ -47,6 +48,7 @@ import { PressComponent } from './press/press.component';
     PressComponent
   ],
   imports: [
+    MasonryModule,
     routing,
     BrowserModule,
     FormsModule,

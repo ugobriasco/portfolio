@@ -1,20 +1,24 @@
 <div class="clearfix">
-    <img alt="" src="http://lorempixel.com/100/100/people/8/" class="img-circle center-block">
+    <img alt="" src={{pro?.avatar}} class="md img-circle center-block">
     <div class="text-wrapper text-center">
-    	<h3>John Doe</h3>
-    	<h4>Web developer</h4>
+    	
+        <h3>{{pro?.name}} {{pro?.surname}}</h3>
+    	<h4>{{pro?.title}}</h4>
     	<p>
-    		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante mauris, elementum a tellus vitae, ornare ultricies magna. Morbi nisi felis, rutrum at justo fermentum, cursus tempor sem. 
+    		{{pro?.headline}}
     	</p>
     	<div>
-    	<h3>
-    		<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-    		<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    		<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    		<a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
-    		<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-    		
-    	</h3>
+        <h3>
+            <a *ngIf="pro?.contact.fb" href={{pro?.contact.fb}}><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a *ngIf="pro?.contact.twitter" href={{pro?.contact.twitter}}><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a *ngIf="pro?.contact.linkedin" href={{pro?.contact.linkedin}}><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+           <a *ngIf="pro?.contact.soundcloud" href={{pro?.contact.soundcloud}}><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+           <a *ngIf="pro?.contact.youtube" href={{pro?.contact.youtube}}><i class="fa fa-youtube" aria-hidden="true"></i></a> 
+           <a *ngIf="pro?.contact.github" href={{pro?.contact.github}}><i class="fa fa-github" aria-hidden="true"></i></a>
+           <a *ngIf="pro?.contact.xing" href={{pro?.contact.xing}}><i class="fa fa-xing" aria-hidden="true"></i></a> 
+            
+        </h3>
+
     		
     		
     	</div>

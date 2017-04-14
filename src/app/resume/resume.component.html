@@ -1,3 +1,5 @@
+
+
 <div class="list-wrapper">
 	<h2>Work experience</h2>
 	<div *ngFor="let job of jobs">
@@ -5,7 +7,7 @@
 			<div class="message-item" id="m16">
 				<div class="message-inner">
 					<div class="message-head clearfix">
-						<div class="avatar pull-left"><a href={{job.company.website}}><img src={{job.company.logo}}></a></div>
+						<div class="avatar pull-right"><a href={{job.company.website}}><img src={{job.company.logo}}></a></div>
 						<div class="user-detail">
 							<h4 class="handle">{{job.title}}</h4>
 
@@ -19,8 +21,8 @@
 								<span class="qa-message-when">
 										<span class="qa-message-when-pad"><i class="fa fa-calendar" aria-hidden="true"></i>
 										</span>
-										<span *ngIf="!isCurrent" class="qa-message-when-data">{{job.startDate}} - {{job.endDate}}</span>
-										<span *ngIf="isCurrent" class="qa-message-when-data">{{job.startDate}} - now</span>
+										<span *ngIf="job.isCurrent == false" class="qa-message-when-data">{{job.startDate}} - {{job.endDate}}</span>
+										<span *ngIf="job.isCurrent == true" class="qa-message-when-data">{{job.startDate}} - now</span>
 								</span>
 
 
@@ -43,13 +45,13 @@
 	</div>
 </div>
 <div class="list-wrapper">
-	<h2>Work experience</h2>
-	<div *ngFor="let job of jobs">
+	<h2>Education</h2>
+	<div *ngFor="let job of edu">
 		<div class="qa-message-list" id="wallmessages">
 			<div class="message-item" id="m16">
 				<div class="message-inner">
 					<div class="message-head clearfix">
-						<div class="avatar pull-left"><a href={{job.company.website}}><img src={{job.company.logo}}></a></div>
+						<div class="avatar pull-right"><a href={{job.company.website}}><img src={{job.company.logo}}></a></div>
 						<div class="user-detail">
 							<h4 class="handle">{{job.title}}</h4>
 
@@ -63,8 +65,8 @@
 								<span class="qa-message-when">
 										<span class="qa-message-when-pad"><i class="fa fa-calendar" aria-hidden="true"></i>
 										</span>
-										<span *ngIf="!isCurrent" class="qa-message-when-data">{{job.startDate}} - {{job.endDate}}</span>
-										<span *ngIf="isCurrent" class="qa-message-when-data">{{job.startDate}} - now</span>
+										<span *ngIf="job.isCurrent == false" class="qa-message-when-data">{{job.startDate}} - {{job.endDate}}</span>
+										<span *ngIf="job.isCurrent == true" class="qa-message-when-data">{{job.startDate}} - now</span>
 								</span>
 
 
@@ -87,13 +89,13 @@
 	</div>
 </div>
 <div class="list-wrapper">
-	<h2>Work experience</h2>
-	<div *ngFor="let job of jobs">
+	<h2>Additional Certification</h2>
+	<div *ngFor="let job of cert">
 		<div class="qa-message-list" id="wallmessages">
 			<div class="message-item" id="m16">
 				<div class="message-inner">
 					<div class="message-head clearfix">
-						<div class="avatar pull-left"><a href={{job.company.website}}><img src={{job.company.logo}}></a></div>
+						<div class="avatar pull-right"><a href={{job.company.website}}><img src={{job.company.logo}}></a></div>
 						<div class="user-detail">
 							<h4 class="handle">{{job.title}}</h4>
 
@@ -107,9 +109,9 @@
 								<span class="qa-message-when">
 										<span class="qa-message-when-pad"><i class="fa fa-calendar" aria-hidden="true"></i>
 										</span>
-										<span *ngIf="!isCurrent" class="qa-message-when-data">{{job.startDate}} - {{job.endDate}}</span>
-										<span *ngIf="isCurrent" class="qa-message-when-data">{{job.startDate}} - now</span>
+										<span class="qa-message-when-data">{{job.date}}</span>
 								</span>
+
 
 
 									<span class="qa-message-where">
@@ -131,6 +133,35 @@
 	</div>
 </div>
 
+<script>
+	$(document).ready(function() {
+  		$('.html').css('width', '90%');
+  	}
+</script>
 
-    
+<div class="list-wrapper ">
+	<h2>Skills</h2>
+	<div class="panel panel-default panel-body">
+		<div class="row">
+			<div class="col-md-3 collapsed" >
+				<h3 class="skillsTop">html</h3> 
+			</div>
+			<div class="col-md-9 collapsed"> 
+			     <div class="skillsBottom">
+			      <div class="progress">
+			        <div class="html progress-bar progress-bar-info" role="progressbar">
+			        </div>
+			      </div>
+			     </div>
+			</div>	
+		</div>	
+	</div>    
+</div>
+
+
+
+
+
+
+
 		
