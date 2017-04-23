@@ -8,15 +8,21 @@ export class ApiService {
 
   constructor(private http: Http, private twitter: TwitterService) { }
 
-  dataUrl = './app/data/resume.json';
+  resumeUrl = './app/data/resume.json';
+  portfolioUrl = './app/data/portfolio.json'
 
   getResume(){
 
-    var a = this.http.get(this.dataUrl);
+    var a = this.http.get(this.resumeUrl);
 
     console.log(a);
 
   	return a;
+  }
+
+  getPortfolio(){
+    let a = this.http.get(this.portfolioUrl);
+    return a;
   }
 
   getTweets(){

@@ -1,12 +1,33 @@
 [
 	{
-		"title":"",
-		"subtitle":"",
-		"cover":"",
-		"description":"",
-		"website":"",
-		"tags": []
-
-	}
+       "title": "MatchYourTIE",
+       "subtitle": "My window to the startup enviroment", 
+       "color": "#dee7f0", 
+       "cover": "./assets/img/portfolio/tie.png",
+       "thumbnail": "./assets/img/portfolio/mod/m-tie.png",
+       "description": "On easter 2012 I started my own long-term entrepreneural program: a delocalized startup accelerator which integrates the metodology proper of a business incubator with the web 2.0. MatchYourTIE.com - Technology, Innovation, Entrepreneurship collects, evaluates and shares the most actual tools and technologies from entrepreneurs to entrepreneurs.",
+       "tags": ["Entrepreneurship", "Technology"],
+       "url": "matchyourtie.com"
+     },
+     {
+       "title": "Menthoring",
+       "subtitle": "Bringing ideas to life", 
+       "color": "#fcd40c", 
+       "cover": "./assets/img/portfolio/genio.jpg",
+       "thumbnail": "./assets/img/portfolio/mod/m-genio.jpg",
+       "description": "I love working with startups, bringing entrepreneurial ideas to life. I offer no-profit consultancy in Lean startup management, SCRUM, business development and Quality Assurance. Folllowing the most relevant projects I took part: Spring 2014 - MINDSET - 1st classified on Hack for Health Startup-Marathon (Kjotrick, BE) Autumn 2013 - TOMEINO - 3rd classified on the 3DayStartup - WHU boot camp (Constanz, DE)",
+       "tags": ["Consulting", "Entrepreneurship"]
+     },
+     {
+       "title": "Impresa e Capitali",
+       "subtitle": "Bringing ideas to life", 
+       "color": "#2B447F", 
+       "cover": "./assets/img/portfolio/ffiec.png",
+       "thumbnail": "./assets/img/portfolio/mod/m-ffiec.jpg",
+       "description": "In January 2015 I joined Mr. Giancarlo DiVona in this interesting project which is aimed to revoulionize the diffusion of the financial news in Italy.",
+       "tags": ["Fintech", "Entrepreneurship"]
+     }
 
 ]
+
+

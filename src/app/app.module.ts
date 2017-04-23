@@ -28,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PressComponent } from './press/press.component';
+import { ModalComponent } from './shared/modal/modal.component';
 
 
 //Since RC6, all Directives and Pipes should be moved to module's declarations.
@@ -45,7 +46,8 @@ import { PressComponent } from './press/press.component';
     FooterComponent,
     NavbarComponent,
     ProfileComponent,
-    PressComponent
+    PressComponent,
+    ModalComponent
   ],
   imports: [
     MasonryModule,
