@@ -1,6 +1,7 @@
 main {
 	background-color:#F7F7F7;
 	padding-top: 20px;
+	min-height: 800px;
 }
 
 img {

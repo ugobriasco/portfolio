@@ -16,3 +16,13 @@ hr {
 .hr-danger{
   background-image: -webkit-linear-gradient(left, rgba(244,67,54,.8), rgba(244,67,54,.6), rgba(0,0,0,0));
 }
+
+
+.nav-sidebar > li > a:hover{
+	background-color: #337AB7;
+	color: white;
+}
+
+nav {
+    background-color: white;    
+}

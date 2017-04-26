@@ -1,13 +1,20 @@
 <h2>About me<hr class=" row text-primary bg-primary" /></h2>
-<p>{{profile?.about.par1}}</p>
+
+<div class="wrapper">
+	<img class="bg"src="{{profile?.about.par1.img_before}}" alt="">
+	<div class="content col ">
+		<p class="lead-17"><span [innerHTML]="profile?.about.par1.text | MarkdownToHtml"> </span></p>	
+	</div>
+	
+</div>
 
 
-<h2>My Service<hr class=" row text-primary bg-primary" /></h2>
 
+
+<!-- <h2>My Service<hr class=" row text-primary bg-primary" /></h2>
+<span [innerHTML]="profile?.about.par2 | MarkdownToHtml"> </span>
 
 
 <h2>Fun Facts<hr class=" row text-primary bg-primary" /></h2>
-
-<p>{{profile?.about.par2}}</p>
---
-<p>{{profile?.about.par3}}</p>
+<span [innerHTML]="profile?.about.par3.text | MarkdownToHtml"> </span>
+<img src="{{profile?.about.par3.img_after}}" alt=""> -->

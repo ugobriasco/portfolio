@@ -1,3 +1,37 @@
 img {
 	width: 100%;
+	opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.boxshadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+.lead-17{
+	font-size: 17px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.wrapper{
+	padding-bottom: 50px;
+}
+
+.content{
+	z-index: 99;
+	background-color: rgba(0,0,0,0.8);
+	color:white;
+	position: absolute;
+	top: 250px;
+	right: 5%;
+	left:5%;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	
+	
 }

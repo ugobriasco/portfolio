@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MasonryModule } from 'angular2-masonry';
+import {MarkdownToHtmlPipe} from 'markdown-to-html-pipe';
 
 
 import 'rxjs/add/operator/map';
@@ -15,6 +16,7 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { TwitterLinksPipe } from './shared/pipes/links.pipe';
+
 import { ApiService } from './shared/api.service';
 
 import { ContactService } from './contact/contact.service';
@@ -37,6 +39,7 @@ import { ModalComponent } from './shared/modal/modal.component';
 @NgModule({
   declarations: [
     TwitterLinksPipe,
+    MarkdownToHtmlPipe,
     AppComponent,
     ContactComponent,
     HomeComponent,
