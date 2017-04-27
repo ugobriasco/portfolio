@@ -33,27 +33,29 @@ export class ContactComponent implements OnInit {
 
   }
 
-  onSubmit(form:any) {
 
-    this.service.getEmailFrom(form.value.name.toString(),form.value.email.toString(),form.value.message.toString())
+
+  onSubmit(form: any) {
+      this.service.postEmail(form.value.name.toString(),form.value.email.toString(),form.value.message.toString())
       .map(res => res)
-      // If Mailgun responds with an error, log the error and set error to true.
       .subscribe(
-                res => {},
-                error => {
-                      this.messageSentError = true;
-                      this.emailForm.reset();
-                      setTimeout(()=>{this.messageSentError=false},3000);
-                      },
-      // Below is what will happen if Mailgun responds with a 200 OK response.
-      // It then resets the form and sets error to false.
-                () => {
-                    this.messageSentSuccess=true;
-                    this.emailForm.reset();
-                    setTimeout(()=>{this.messageSentSuccess=false},3000);
-                    }
+        res => {},
+        error => {
+                  this.messageSentError = true;
+                  this.emailForm.reset();
+                  setTimeout(()=>{this.messageSentError=false},3000);
+                  },
+        () => {
+          this.messageSentSuccess=true;
+          this.emailForm.reset();
+          setTimeout(()=>{this.messageSentSuccess=false},3000);
+         }
       );
-  }
+    }
+
+
+
+
 
   private emailValidator(control: FormControl): { [s: string]: boolean } {
     if (!control.value.match(/^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$/i)) {

@@ -13,18 +13,17 @@ export class ContactService {
   	this.http.get('./app/data/config.json').subscribe(res => this.cfg = res.json());
   }
 
+    private _contactUrl = './assets/inc/email.php';
 
-  getEmailFrom(fromName, fromEmail, message) {
-    const headers = new Headers();
-    headers.append("Authorization", "Basic "+ "key-d56828f431c6c6cfb2a193cb7345aed2");
-    headers.append("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    const recieverMail = "ugo.briasco@gmail.com";
-    const subject = "error report submitted by interactive screen";
-    const recieverName = "CSC SERVICE";
-    const url = "https://api.mailgun.net/v3/sandbox483ba75d9caa4092a6929e08d9bd2d9a.mailgun.org/messages";
-    const body = "from="+fromName+"<"+fromEmail+">&to="+recieverName+"<"+recieverMail+">&subject="+subject+"&text="+message;
-    return this.http.post(url,body,{headers:headers});
-  }
+ 
+    postEmail(name: String, email: String, message: String): Observable<string>{
+      let body = `name=${name}&email=${email}&message=${message}`;
+      let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+      let options = new RequestOptions({ headers: headers });
+   
+      return this.http.post(this._contactUrl, body, options)
+      .catch(this.handleError)
+    }
 
 
   private handleError(err){
