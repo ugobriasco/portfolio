@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgZone } from '@angular/core';
+import { ApiService } from '../shared/api.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+	 isShrunk: boolean = false;
+   pro;
+
+  constructor(private zone: NgZone, private api: ApiService) {
+    window.onscroll = () => {
+      zone.run(() => {
+        if(window.pageYOffset > 0) {
+             this.isShrunk = true;
+        } else {
+             //this.isShrunk = false;
+        }
+      });
+    }
+  }
 
   ngOnInit() {
+    this.api.getResume().subscribe((res) => {
+      this.pro = res.json().profile;
+    });
   }
+
+
+
+  
+
+
+
+
 
 }

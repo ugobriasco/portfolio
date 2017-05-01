@@ -1,29 +1,27 @@
 <footer>
 <!-- Copyright and social media section -->
-<section class="copyright-section">
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-<div class="logo">
-<!-- Replace Your logo and remove text  -->
-<!-- <img src="images/logo.png" class="img-responsive center-block"> -->
-<h2 class="demo-logo">NBo<strong>otst</strong>rap</h2>
-</div>
-<div class="social-media">
-<ul class="list-inline">
-<li><a href=""><i class="fa fa-facebook"></i></a></li>
-<li><a href=""><i class="fa fa-twitter"></i></a></li>
-<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-<li><a href=""><i class="fa fa-pinterest"></i></a></li>
-<li><a href=""><i class="fa fa-youtube-play"></i></a></li>
-</ul>
-</div>
-
-<div class="copyright">
-<p>Copyright &copy; 2016. Next Bootstrap.</p>
-</div>
-</div>
-</div>
-</div>
-</section><!--  End of copyright and social media section -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+				
+				<span>
+					<a *ngIf="pro?.contact.fb" href={{pro?.contact.fb}}><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			            <a *ngIf="pro?.contact.twitter" href={{pro?.contact.twitter}}><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			            <a *ngIf="pro?.contact.linkedin" href={{pro?.contact.linkedin}}><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			           <a *ngIf="pro?.contact.soundcloud" href={{pro?.contact.soundcloud}}><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+			           <a *ngIf="pro?.contact.youtube" href={{pro?.contact.youtube}}><i class="fa fa-youtube" aria-hidden="true"></i></a> 
+			           <a *ngIf="pro?.contact.github" href={{pro?.contact.github}}><i class="fa fa-github" aria-hidden="true"></i></a>
+			           <a *ngIf="pro?.contact.xing" href={{pro?.contact.xing}}><i class="fa fa-xing" aria-hidden="true"></i></a>
+				</span>
+						
+				</div>
+				<div class="col-sm-6">
+					<div class="copyright text-right">
+						<p>&copy; 2017 <a href="#">Ugo Briasco</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--  End of copyright and social media section -->
 </footer> <!--  End of footer -->

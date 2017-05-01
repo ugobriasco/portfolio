@@ -1,2 +1,41 @@
-<section class="bg"></section>
+<!-- <section class="bg"></section> -->
+
+ <header [ngClass]="{'header_nav':true, 'header-big':!isShrunk, 'header-small':isShrunk}">
+      <img src="./assets/img/bg.jpg" [ngClass]="{'header_nav':true, 'header-big':!isShrunk, 'header-small':isShrunk}">
+      <div class="container">
+          <div class="row header-info " *ngIf="!isShrunk" >
+            <div class="col-sm-10 col-sm-offset-1 text-center content ">
+              <h1 class="fadeIn">Hello, I'm Ugo Briasco</h1>
+              <br />
+              <p class="lead fadeIn">QA / Business Developer /n IT and Medical devices</p>
+              <br />            
+            </div>
+          </div>
+          <div class="row header-social"*ngIf="!isShrunk">
+          
+            <div class="col-md-6 nopadding">
+              bau
+            </div>
+            <div class="col-md-6 nopadding">
+              
+                    <p class="text-right">
+                    <a *ngIf="pro?.contact.fb" href={{pro?.contact.fb}}><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a *ngIf="pro?.contact.twitter" href={{pro?.contact.twitter}}><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a *ngIf="pro?.contact.linkedin" href={{pro?.contact.linkedin}}><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                   <a *ngIf="pro?.contact.soundcloud" href={{pro?.contact.soundcloud}}><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+                   <a *ngIf="pro?.contact.youtube" href={{pro?.contact.youtube}}><i class="fa fa-youtube" aria-hidden="true"></i></a> 
+                   <a *ngIf="pro?.contact.github" href={{pro?.contact.github}}><i class="fa fa-github" aria-hidden="true"></i></a>
+                   <a *ngIf="pro?.contact.xing" href={{pro?.contact.xing}}><i class="fa fa-xing" aria-hidden="true"></i></a>
+                   </p>
+               
+            </div>
+     
+                
+          </div>
+      </div>
+      
+
+</header>
+
+
 
