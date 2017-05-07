@@ -1,8 +1,23 @@
+app-home{
+	
+
+}
+
 main {
 	background-color:#F7F7F7;
+
+	 
+
+
 	padding-top: 30px;
-	min-height: 730px;  
+	min-height: 91vh;
+	margin: 0 auto;
+	  
+	
+
 }
+
+
 
 main.container{
 	padding-left: 0px;
@@ -14,6 +29,17 @@ main.container{
 img {
 	width:100%;
 }
+
+
+.scroll{
+	overflow-x: scroll;
+	max-height: 90vh;
+}
+
+
+
+
+
 
 
 

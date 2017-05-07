@@ -8,6 +8,7 @@ import { ApiService } from '../shared/api.service';
 })
 export class FooterComponent implements OnInit {
 pro;
+date;
   constructor(private api: ApiService) { }
 
 
@@ -16,6 +17,9 @@ pro;
   	this.api.getResume().subscribe((res) => {
   		this.pro = res.json().profile;
   	});
+
+  	this.date = new Date();
+
 
   }
 

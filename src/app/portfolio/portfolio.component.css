@@ -1,6 +1,6 @@
 
 .box {
-    height: 300px;
+    height: 190px;
     margin-bottom:20px;
     background-size: cover;
 }
@@ -10,7 +10,7 @@
 }
 
 .box:hover .overlay {
-  height: 90%;
+  height: 80%;
 }
 
 .overlay {
@@ -34,6 +34,8 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 5px;
+  color: #F7F7F7;
+  
 }
 
 img {

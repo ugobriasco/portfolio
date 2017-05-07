@@ -14,7 +14,7 @@
 						<span *ngIf="entry.retweeted == false"> {{entry.user.screen_name}}</span>
 						<span *ngIf="entry.retweeted == true"> {{entry.retweeted_status.user.screen_name}}</span>
 					</h5>
-					<span [outerHTML]="entry.text | twitterLinks"> </span>
+					<span [outerHTML]="entry.text | twitterLinks" class="text-right"> </span>
 					<a href="{{entry.extended_entities?.media[0].url}}"><img src={{entry.extended_entities?.media[0].media_url}} class="img-rounded"></a>
 				</div>
 			</li>

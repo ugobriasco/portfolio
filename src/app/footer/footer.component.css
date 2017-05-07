@@ -1,7 +1,25 @@
 footer{
+	
 	padding-top: 20px;
 	padding-left: 5%;
 	padding-right: 5%;
+	height: 8vh;
+	background-color: white;
+
+
+	
+}
+
+.copyright p, p a, ul li a{
+	color: grey;
+}
+
+p {
+	margin-bottom: 2px;
+}
+
+li{
+	padding-right: 0px; 
 }
 
 

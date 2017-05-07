@@ -3,6 +3,7 @@ import { NgZone } from '@angular/core';
 import { ApiService } from '../shared/api.service';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,7 +14,11 @@ export class HomeComponent implements OnInit {
 	 isShrunk: boolean = false;
    pro;
 
-  constructor(private zone: NgZone, private api: ApiService) {
+  constructor(
+    private zone: NgZone, 
+    private api: ApiService
+
+    ) {
     window.onscroll = () => {
       zone.run(() => {
         if(window.pageYOffset > 0) {
@@ -30,6 +35,12 @@ export class HomeComponent implements OnInit {
       this.pro = res.json().profile;
     });
   }
+
+  shrink(){
+     this.isShrunk = true;
+  }
+
+ 
 
 
 

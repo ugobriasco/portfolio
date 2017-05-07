@@ -1,5 +1,6 @@
+<h2>My works <hr class=" row text-primary bg-primary" /></h2>
 <div *ngFor="let brick of bricks">
-       <div class="col-md-6 collapsed">
+       <div class="col-md-4 collapsed">
 	       <div class="box" [ngStyle]="{'background-image':'url(' + brick.thumbnail + ')'}" >
 	       		
             <div class="overlay"[ngStyle]="{'background-color': brick.color}" (click)="modal1.show()">
@@ -44,7 +45,7 @@
   					    </div>
 	       		</app-modal>
 	       </div>
-	   </div>
+  </div>
 </div>
 
 

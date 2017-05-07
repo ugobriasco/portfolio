@@ -1,5 +1,9 @@
-header {  
- 
+header { 
+position: absolute;
+  margin-top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: white; 
    
 }
 
@@ -22,21 +26,14 @@ header img {
     padding: 5% 5% 5% 5%;   
 }
 .header-small {
+   background-color: white;
    height:0vh;
    padding-right: 5%;
    padding-left: 5%;
    padding-top: 0px;
    padding-bottom: 0px; 
    
-}
-.header-info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin-left: 0px;
-  margin-bottom: 20%;
+   
 }
 
 .header-social{
@@ -55,6 +52,21 @@ header img {
   padding-left: 20%;
 }
 
+.center-block{
+  margin-top: 15%;
+}
+
+
+.display{
+  
+font-weight: 300;
+letter-spacing: 3px;
+font-size: 3.0em;
+
+
+
+
+}
 
 
 
