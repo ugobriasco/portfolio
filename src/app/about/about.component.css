@@ -1,15 +1,11 @@
-img {
+.bg{
+	
+	
+
 	width: 100%;
 	opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
-
-.boxshadow{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-
 
 .lead-17{
 	font-size: 17px;
@@ -22,12 +18,11 @@ img {
 }
 
 .content{
-	z-index: 99;
+
+	
 	opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 	color:white;
-	position: absolute;
-	top: 300px;
 	right: 5%;
 	left:5%;
 	padding-left: 15px;

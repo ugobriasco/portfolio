@@ -1,10 +1,12 @@
 <h2>About me<hr class=" row text-primary bg-primary" /></h2>
 
 <div class="wrapper">
-	<img class="bg"src="{{profile?.about.par1.img_before}}" alt="">
+	
 	<div class="bg-primary content col ">
 		<p class="lead-17"><span [innerHTML]="profile?.about.par1.text | MarkdownToHtml"> </span></p>	
 	</div>
+
+	<img class="bg"src="{{profile?.about.par1.img_before}}" alt="">
 	
 </div>
 
