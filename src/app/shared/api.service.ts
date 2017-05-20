@@ -16,9 +16,6 @@ export class ApiService {
   getResume(){
 
     var a = this.http.get(this.resumeUrl);
-
-    console.log(a);
-
   	return a;
   }
 

@@ -9,8 +9,9 @@ import { PressComponent } from './press/press.component';
 
 export const routes: Routes = [
 {
-	path: '**', 
-	redirectTo: '/' 
+	path: '', 
+	redirectTo: '/', 
+	pathMatch: 'full'
 },
 {
 	path: 'about',
