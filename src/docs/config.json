@@ -1,0 +1,17 @@
+{
+	"mailgun":{
+		"url": "MAILGUN_URL_HERE",
+		"apiKey": "MAILGUN_APIKEY_HERE",
+		"email": "YOUR_EMAIL_HERE"
+	},
+	"linkedin":{
+		"url": "LINKEDIN_URL_HERE",
+		"apiKey": "LINKEDIN_API_KEY_HERE"
+	},
+	"twitter":{
+		"consumerKey": "6bKoszKhLCqE4WGUWlnxncGkt",
+		"consumerSecret": "bvaHXQDrejktH0DPi6BB2NUF0tpEncdiDsbKtyEjKFQxB2hhNN",
+		"accessToken":"341947997-makcDnZsyDUaRDx41UrLmbV0sjxEVswvkAVFfOBn",
+		"accesTokenSecret": "dtdYN3ff6Qy1NSOPMG2rhdEms37oh5K4HLUuJTlLspAUk"
+	}
+}

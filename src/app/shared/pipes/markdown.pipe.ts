@@ -11,11 +11,12 @@ export class MarkdownPipe implements PipeTransform {
 function processText(text) {
 
 
+
     //headers
-    let exp = /(#+)(.*)/)/g;
-    text = text.replace(exp, "self::header");
+/*    let exp = /(#+)(.*)/)/g;
+    text = text.replace(exp, "self::header");*/
     //links
-    exp = /\[([^\[]+)\]\(([^\)]+)\)/g;
+    let exp = /\[([^\[]+)\]\(([^\)]+)\)/g;
     text = text.replace(exp, "<a href='$2' target='_blank'>$2</a>");
     //bold
     exp = /(\*\*|__)(.*?)\1/g;

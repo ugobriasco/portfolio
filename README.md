@@ -1,13 +1,34 @@
 # V2
-
+V2 is an API friendly V-Card portfolio website.
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Copyright: UgoBriasco (hi@ugobriasco.me)
 
-## Code scaffolding
+# Release Notes
+V2 release 0.0.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+##Features
+- Profile data loaded from external .json files under ./docs
+- profile data (resume, portfolio) can be entered using markdown
+- contact form sends emails via ./assets/inc/email.php (bug)
+- the section "press" contains user's twitts/retwitts
+
+
+##Bugs
+- twitter api not working
+    + cors conflict
+    + a service is calling the wrong directory
+- about box overlapping the footer
+- images are loading slowly
+- email is not sent
+    + email.php not accessble due rights issue
+- missing input validation empty contact form
+- zoneaware error by routing the page
+- google wants to translate in portugese
+- footer in production not calling the right css
+- impressum returns 404
+
+#Depoly information
 
 ## Build
 

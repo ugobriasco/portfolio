@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MasonryModule } from 'angular2-masonry';
+import { JsonpModule } from '@angular/http';
 import {MarkdownToHtmlPipe} from 'markdown-to-html-pipe';
 
 
@@ -58,7 +59,8 @@ import { ModalComponent } from './shared/modal/modal.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    JsonpModule
   ],
   providers: [
   ApiService,

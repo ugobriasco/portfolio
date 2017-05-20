@@ -28,7 +28,6 @@ export class ContactComponent implements OnInit {
   		'email':   ['', Validators.compose([Validators.required, this.emailValidator])],
   		'name':    ['', Validators.required ],
   		'message': ['', Validators.compose([Validators.required,Validators.minLength(10)])]
-
   	});
 
   }
