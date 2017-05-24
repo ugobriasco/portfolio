@@ -10,23 +10,15 @@ V2 release 0.0.0
 ##Features
 - Profile data loaded from external .json files under ./docs
 - profile data (resume, portfolio) can be entered using markdown
-- contact form sends emails via ./assets/inc/email.php (bug)
+- contact form sends emails via formspree.io
 - the section "press" contains user's twitts/retwitts
 
 
 ##Bugs
-- twitter api not working
-    + cors conflict
-    + a service is calling the wrong directory
-- about box overlapping the footer
 - images are loading slowly
 - email is not sent
-    + email.php not accessble due rights issue
+    + probable inconsistan data
 - missing input validation empty contact form
-- zoneaware error by routing the page
-- google wants to translate in portugese
-- footer in production not calling the right css
-- impressum returns 404
 
 #Depoly information
 
