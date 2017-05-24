@@ -10,36 +10,62 @@ export class ContactService {
 	cfg;
 
   constructor(private http: Http) { 
-  	this.http.get('./app/data/config.json').subscribe(res => this.cfg = res.json());
+  	// this.http.get('./app/data/config.json').subscribe(res => this.cfg = res.json());
   }
 
-    private _contactUrl = '/assets/inc/email.php';
+
 
  
-    _postEmail(name: String, email: String, message: String): Observable<string>{
-      let body = `name=${name}&email=${email}&message=${message}`;
-      let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-      let options = new RequestOptions({ headers: headers });
+    // __postEmail(name: String, email: String, message: String): Observable<string>{
+    //   let body = `name=${name}&email=${email}&message=${message}`;
+    //   let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+    //   let options = new RequestOptions({ headers: headers });
    
-      return this.http.post(this._contactUrl, body, options)
-      .catch(this.handleError)
-    }
+    //   return this.http.post(this._contactUrl, body, options)
+    //   .catch(this.handleError)
+    // }
+
+
+    //  _postEmail(name: String, email: String, message: String): Observable<string>{
+    //   let body = `name=${name}&email=${email}&message=${message}`;
+    //   let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+    //   let options = new RequestOptions({ headers: headers });
+    //   // return this.http.post(this._contactUrl, body, options)
+    //   // .catch(this.handleError)
+
+    //   return this.http.post(this._contactUrl, body, options)
+    //   .map(response => {
+    //   	console.log('email sent', response);
+    //   	return response;
+    //   })
+    //   .catch(this.handleError);
+    // }
+
+
+
 
 
      postEmail(name: String, email: String, message: String): Observable<string>{
-      let body = `name=${name}&email=${email}&message=${message}`;
+     
       let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
       let options = new RequestOptions({ headers: headers });
-      // return this.http.post(this._contactUrl, body, options)
-      // .catch(this.handleError)
 
-      return this.http.post(this._contactUrl, body, options)
+      let url = "http://formspree.io/hi@ugobriasco.me";
+      let data = {
+        name: name,
+        email: email,
+        comments: message
+      }
+      
+      return this.http.post(url, data, options)
       .map(response => {
-      	console.log('email sent', response);
-      	return response;
+        console.log('email sent', response);
+        return response;
       })
       .catch(this.handleError);
     }
+
+
 
 
 
