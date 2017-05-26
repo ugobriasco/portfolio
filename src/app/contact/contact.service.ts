@@ -7,54 +7,24 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ContactService {
 
-	cfg;
-
   constructor(private http: Http) { 
-  	// this.http.get('./app/data/config.json').subscribe(res => this.cfg = res.json());
+  
   }
-
-
-
- 
-    // __postEmail(name: String, email: String, message: String): Observable<string>{
-    //   let body = `name=${name}&email=${email}&message=${message}`;
-    //   let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-    //   let options = new RequestOptions({ headers: headers });
-   
-    //   return this.http.post(this._contactUrl, body, options)
-    //   .catch(this.handleError)
-    // }
-
-
-    //  _postEmail(name: String, email: String, message: String): Observable<string>{
-    //   let body = `name=${name}&email=${email}&message=${message}`;
-    //   let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-    //   let options = new RequestOptions({ headers: headers });
-    //   // return this.http.post(this._contactUrl, body, options)
-    //   // .catch(this.handleError)
-
-    //   return this.http.post(this._contactUrl, body, options)
-    //   .map(response => {
-    //   	console.log('email sent', response);
-    //   	return response;
-    //   })
-    //   .catch(this.handleError);
-    // }
-
-
-
-
 
      postEmail(name: String, email: String, message: String): Observable<string>{
      
-      let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+      let headers = new Headers({ 
+        'Accept': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded'
+
+      });
       let options = new RequestOptions({ headers: headers });
 
       let url = "http://formspree.io/hi@ugobriasco.me";
       let data = {
         name: name,
         email: email,
-        comments: message
+        message: message
       }
       
       return this.http.post(url, data, options)
@@ -64,14 +34,6 @@ export class ContactService {
       })
       .catch(this.handleError);
     }
-
-
-
-
-
-
-
-
 
   private handleError(err){
 		//super duper error handling

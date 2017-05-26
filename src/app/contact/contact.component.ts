@@ -21,14 +21,19 @@ export class ContactComponent implements OnInit {
   constructor(
   	private service: ContactService,
   	private _fb: FormBuilder
-  	) { }
+  	) { 
+
+    this.emailForm = this._fb.group({
+      'email':   [null, Validators.compose([Validators.required])],
+      'name':    [null, Validators.required ],
+      'message': [null, Validators.compose([Validators.required, Validators.minLength(10)])]
+    });
+
+
+  }
 
   ngOnInit() {
-  	this.emailForm = this._fb.group({
-  		'email':   ['', Validators.compose([Validators.required, this.emailValidator])],
-  		'name':    ['', Validators.required ],
-  		'message': ['', Validators.compose([Validators.required,Validators.minLength(10)])]
-  	});
+  	
 
   }
 
@@ -46,7 +51,7 @@ export class ContactComponent implements OnInit {
                   },
         () => {
           this.messageSentSuccess=true;
-          this.emailForm.reset();
+          //this.emailForm.reset();
           setTimeout(()=> { this.messageSentSuccess=false },3000);
          }
       );
@@ -56,12 +61,12 @@ export class ContactComponent implements OnInit {
 
 
 
-  private emailValidator(control: FormControl): { [s: string]: boolean } {
-    if (!control.value.match(/^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$/i)) {
-      return {invalidEmail: true};
-    }else{
-      return null;
-    }
-  }
+  // private emailValidator(control: FormControl): { [s: string]: boolean } {
+  //   if (!control.value.match(/^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$/i)) {
+  //     return {invalidEmail: true};
+  //   }else{
+  //     return null;
+  //   }
+  // }
 
 }
