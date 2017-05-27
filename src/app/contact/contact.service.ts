@@ -22,10 +22,12 @@ export class ContactService {
 
       let url = "http://formspree.io/hi@ugobriasco.me";
       let data = {
-        name: name,
-        email: email,
-        message: message
+        name: 'ugo',
+        email: 'ugo.briasco@gmail.com',
+        message: 'message'
       }
+
+      console.log({'data': data});
       
       return this.http.post(url, data, options)
       .map(response => {
