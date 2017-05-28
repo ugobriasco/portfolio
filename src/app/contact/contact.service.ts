@@ -22,9 +22,9 @@ export class ContactService {
 
       let url = "http://formspree.io/hi@ugobriasco.me";
       let data = {
-        name: 'ugo',
-        email: 'ugo.briasco@gmail.com',
-        message: 'message'
+        name: name,
+        email: email,
+        message: message
       }
 
       console.log({'data': data});
