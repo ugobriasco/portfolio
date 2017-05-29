@@ -21,10 +21,9 @@ export class ContactService {
       let options = new RequestOptions({ headers: headers });
 
       let url = "http://formspree.io/hi@ugobriasco.me";
-
       let data = `name=${name}&email=${email}&message=${message}`;
       
-      return this.http.post(url, _data, options)
+      return this.http.post(url, data, options)
       .map(response => {
         console.log('email sent', response);
         return response;
