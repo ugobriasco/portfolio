@@ -5,10 +5,10 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 Author: UgoBriasco (hi@ugobriasco.me)
 
 # Release Notes
-V2 release 0.0.1
+V2 release 0.1
 
 ## Features 
-**v0.0.1**
+**v0.1**
 - Profile data loaded from external .json files under ./docs
 - profile data (resume, portfolio) can be entered using markdown
 - contact form sends emails via formspree.io
@@ -19,7 +19,7 @@ V2 release 0.0.1
 - the page is not yet optimized for production
 - missing input validation empty contact form
 
-#Depoly information
+# Depoly information
 
 ## Build
 
