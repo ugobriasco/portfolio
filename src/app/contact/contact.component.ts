@@ -48,6 +48,7 @@ export class ContactComponent implements OnInit {
                   },
         () => {
           this.messageSentSuccess=true;
+          this.emailForm.reset();
           setTimeout(()=> { this.messageSentSuccess=false },3000);
          }
       );

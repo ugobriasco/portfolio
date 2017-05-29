@@ -9,9 +9,9 @@
 		"apiKey": "LINKEDIN_API_KEY_HERE"
 	},
 	"twitter":{
-		"consumerKey": "6bKoszKhLCqE4WGUWlnxncGkt",
-		"consumerSecret": "bvaHXQDrejktH0DPi6BB2NUF0tpEncdiDsbKtyEjKFQxB2hhNN",
-		"accessToken":"341947997-makcDnZsyDUaRDx41UrLmbV0sjxEVswvkAVFfOBn",
-		"accesTokenSecret": "dtdYN3ff6Qy1NSOPMG2rhdEms37oh5K4HLUuJTlLspAUk"
+		"consumerKey": "TWITTER_KEY",
+		"consumerSecret": "TWITTER_SECRET",
+		"accessToken":"TWITTER_TOKEN",
+		"accesTokenSecret": "TWITTER_TOKEN_SECRET"
 	}
 }

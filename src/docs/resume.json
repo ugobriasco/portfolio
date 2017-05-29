@@ -164,8 +164,8 @@
 			},
 			"isCurrent": false,
 		    "location": {
-		    	"country": "Herxheim",
-		    	"city": "Germany"
+		    	"city": "Herxheim",
+		    	"country": "Germany"
 		    },
 			"tag": ["sw development", "LabVIEW"],
 			"summary":"Software development, data acquisition and signal processing (LabVIEW) for embedded sensors.<br>Code-Optimization (LabVIEW) under the NI-Guidelines."
@@ -181,8 +181,8 @@
 			},
 			"isCurrent": false,
 		    "location": {
-		    	"country": "Berlin",
-		    	"city": "Germany"
+		    	"country": "Germany",
+		    	"city": "Berlin"
 		    },
 			"tag": ["biotech", "stem cells", "Ultrasound Technology"],
 			"summary":"Studying the effects of LIPUS (Low Intensity Pulsed Ultrasounds) on Mesenchymal Stromal Cells for bone regeneration"
@@ -198,8 +198,8 @@
 			},
 			"isCurrent": false,
 		    "location": {
-		    	"country": "Basel",
-		    	"city": "Switzerland"
+		    	"country": "Switzerland",
+		    	"city": "Basel"
 		    },
 			"tag": ["biotech", "stem cells", "Tissue Engineering"],
 			"summary":"Designed a streamlined manufacturing system for bone regeneration, using freshly isolated Adipose Tissue Stromal Cells. Produced Bio-Artificial scaffolds suitable in perfusion bioreactors. Acquired working autonomy in biosafety level 2 laboratories."
@@ -212,9 +212,9 @@
 			"group_color":"",
 			"group_skills": [
 				{"name":"html/css","value":"50%"},
-				{"name":"angular2","value":"70%"},
-				{"name":"node","value":"50%"},
-				{"name":"mongo","value":"30%"}
+				{"name":"angular2","value":"60%"},
+				{"name":"node","value":"40%"},
+				{"name":"mongo","value":"20%"}
 			]
 		},
 		{
