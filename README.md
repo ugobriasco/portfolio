@@ -15,7 +15,7 @@ V2 release 0.1
 - the section "press" contains user's twitts/retwitts
 
 
-## Bugs
+## Known bugs and limitations
 - the page is not yet optimized for production
 - missing input validation empty contact form
 

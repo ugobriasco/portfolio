@@ -40,6 +40,9 @@ testem.log
 Thumbs.db
 
 #Configs
-/src/app/data/config.json
-/src/app/data/resume.json
-/src/app/data/config.json
+/src/docs/config.json
+/src/docs/resume.json
+/src/docs/config.json
+/src/docs/credits.html
+/src/docs/disclaimer.html
+/src/docs/impressum.html
