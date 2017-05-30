@@ -1,5 +1,6 @@
-import { Component, OnInit, AfterViewInit  } from '@angular/core';
+import { Component, OnInit, AfterViewInit} from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import {Http} from '@angular/http';
 import { ApiService } from '../shared/api.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class PressComponent implements OnInit, AfterViewInit  {
 
   constructor(
     private api: ApiService,
-    private _router: Router
+    private _router: Router,
+    private http: Http
     ) {
     //this.http.get('./docs/config.json').subscribe(res => this.cfg = res.json());
 

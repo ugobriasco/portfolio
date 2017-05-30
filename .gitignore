@@ -4,6 +4,7 @@
 /dist
 /tmp
 
+
 # dependencies
 /node_modules
 
@@ -31,6 +32,7 @@ npm-debug.log
 testem.log
 /typings
 
+
 # e2e
 /e2e/*.js
 /e2e/*.map
@@ -40,9 +42,5 @@ testem.log
 Thumbs.db
 
 #Configs
-/src/docs/config.json
-/src/docs/resume.json
-/src/docs/config.json
-/src/docs/credits.html
-/src/docs/disclaimer.html
-/src/docs/impressum.html
+/docs
+
