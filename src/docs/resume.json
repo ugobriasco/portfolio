@@ -7,7 +7,7 @@
 		"headline": "Make dreams real",
 		"about":{
 			"par1":{
-				"text": "And *now* [a link](http://www.google.com) to **follow** and [another](http://yahoo.com/).<br>* One<br>* Two<br>* Three<br>## Subhead<br>One **two** three **four** five.<br>One __two__ three _four_ five __six__ seven _eight_.<br>1. One<br>2. Two<br>3. Three<br>More text with `inline($code)` sample.<br>> A block quote<br>> across two lines.<br>More text...",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien.",
 				"img_after":"./assets/img/berlin.jpg",
 				"img_before":"./assets/img/piedi.jpg"
 			},
