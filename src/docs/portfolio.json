@@ -1,33 +1,31 @@
 [
 	{
-       "title": "Lorem ipsum",
-       "subtitle": "dolor sit amet", 
+       "title": "MatchYourTIE",
+       "subtitle": "My window to the startup enviroment", 
        "color": "#dee7f0", 
-       "cover": "./assets/img/portfolio/tie.png",
-       "thumbnail": "./assets/img/portfolio/mod/m-tie.png",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. Aliquam malesuada finibus tempor. Donec nec vehicula massa. Aliquam blandit lectus metus, non tempor tortor finibus ut. Vestibulum lacus tortor, accumsan at lectus a, dictum iaculis orci. Duis semper libero sed ipsum volutpat, ac imperdiet magna pharetra. Suspendisse aliquam est sit amet nulla sollicitudin luctus placerat eget diam. Donec laoreet turpis quam, quis condimentum nunc facilisis vitae. Pellentesque sodales diam elit, sagittis malesuada nibh pellentesque id.",
-       "tags": ["Lorem", "Ipsum"],
-       "url": "http://www.lipsum.com/feed/html"
+       "cover": "./docs/img/portfolio/tie.png",
+       "thumbnail": "./docs/img/portfolio/mod/m-tie.png",
+       "description": "On easter 2012 I started my own long-term entrepreneural program: a delocalized startup accelerator which integrates the metodology proper of a business incubator with the web 2.0. MatchYourTIE.com - Technology, Innovation, Entrepreneurship collects, evaluates and shares the most actual tools and technologies from entrepreneurs to entrepreneurs.",
+       "tags": ["Entrepreneurship", "Technology"],
+       "url": "matchyourtie.com"
      },
      {
-       "title": "Dolor sit amet",
-       "subtitle": "consectetur adipiscing elit", 
+       "title": "Menthoring",
+       "subtitle": "Bringing ideas to life", 
        "color": "#fcd40c", 
-       "cover": "./assets/img/portfolio/genio.jpg",
-       "thumbnail": "./assets/img/portfolio/mod/m-genio.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. Aliquam malesuada finibus tempor. Donec nec vehicula massa. Aliquam blandit lectus metus, non tempor tortor finibus ut. Vestibulum lacus tortor, accumsan at lectus a, dictum iaculis orci. Duis semper libero sed ipsum volutpat, ac imperdiet magna pharetra. Suspendisse aliquam est sit amet nulla sollicitudin luctus placerat eget diam. Donec laoreet turpis quam, quis condimentum nunc facilisis vitae. Pellentesque sodales diam elit, sagittis malesuada nibh pellentesque id.",
-       "tags": ["Lorem", "Ipsum"],
-       "url": "http://www.lipsum.com/feed/html"
+       "cover": "./docs/img/portfolio/genio.jpg",
+       "thumbnail": "./docs/img/portfolio/mod/m-genio.jpg",
+       "description": "I love working with startups, bringing entrepreneurial ideas to life. I offer no-profit consultancy in Lean startup management, SCRUM, business development and Quality Assurance. Folllowing the most relevant projects I took part: Spring 2014 - MINDSET - 1st classified on Hack for Health Startup-Marathon (Kjotrick, BE) Autumn 2013 - TOMEINO - 3rd classified on the 3DayStartup - WHU boot camp (Constanz, DE)",
+       "tags": ["Consulting", "Entrepreneurship"]
      },
      {
-       "title": "Integer convallis",
-       "subtitle": "convallis sapien in ultrices", 
+       "title": "Impresa e Capitali",
+       "subtitle": "Bringing ideas to life", 
        "color": "#2B447F", 
-       "cover": "./assets/img/portfolio/ffiec.png",
-       "thumbnail": "./assets/img/portfolio/mod/m-ffiec.jpg",
-       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. Aliquam malesuada finibus tempor. Donec nec vehicula massa. Aliquam blandit lectus metus, non tempor tortor finibus ut. Vestibulum lacus tortor, accumsan at lectus a, dictum iaculis orci. Duis semper libero sed ipsum volutpat, ac imperdiet magna pharetra. Suspendisse aliquam est sit amet nulla sollicitudin luctus placerat eget diam. Donec laoreet turpis quam, quis condimentum nunc facilisis vitae. Pellentesque sodales diam elit, sagittis malesuada nibh pellentesque id.",
-       "tags": ["Lorem", "Ipsum"],
-       "url": "http://www.lipsum.com/feed/html"
+       "cover": "./docs/img/portfolio/ffiec.png",
+       "thumbnail": "./docs/img/portfolio/mod/m-ffiec.jpg",
+       "description": "In January 2015 I joined Mr. Giancarlo DiVona in this interesting project which is aimed to revoulionize the diffusion of the financial news in Italy.",
+       "tags": ["Fintech", "Entrepreneurship"]
      }
 
 ]

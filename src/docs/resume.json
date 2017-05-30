@@ -1,42 +1,60 @@
 {	
 	"profile":{
-		"name": "John",
-		"surname": "Doe",
+		"name": "Ugo",
+		"surname": "Briasco",
 		"avatar": "https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/15941089_10154379422633736_8535047405543997968_n.jpg?oh=17dd883090eec3cd6ce0924f8643f4bb&oe=5986BA3B",
-		"title": "Web Developer",
-		"headline": "Make dreams real",
+		"title": "QA / Business Developer<br>IT and Medical devices",
+		"headline": "",
 		"about":{
 			"par1":{
-				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien.",
-				"img_after":"./assets/img/berlin.jpg",
+				"text": "I’m a Berlin based **QA consultant** and **Business Developer** specialized in IT and **Healthcare** industry. With a M.Sc. In Biomedical Engineering, I’m working since 2010 in high regulated industry for clinical diagnostics, applying the most advanced methodology of project and quality management. I’m also an entrepreneur and I **love working with startups** as mentor, investor and co-founder. I'm **Italian** native speaker with working proficiency in **English** and **German**, which allows my multidisciplinary network to grow constantly across **Europe**.",
+				"img_after":"./asssets/img/berlin.jpg",
 				"img_before":"./assets/img/piedi.jpg"
 			},
-			"par2":{
+			"par2":"And *now* [a link](http://www.google.com) to **follow** and [another](http://yahoo.com/).<br>* One<br>* Two<br>* Three<br>## Subhead<br>One **two** three **four** five.<br>One __two__ three _four_ five __six__ seven _eight_.<br>1. One<br>2. Two<br>3. Three<br>More text with `inline($code)` sample.<br>> A block quote<br>> across two lines.<br>More text...",
+			"par3":{
 				"text":"",
 				"img_before":"",
 				"img_after":"./assets/img/waitingroom.jpg"
 			}
 		},
 		"contact":{
-			"email":"john.doe@email.com",
-			"fb":"https://www.facebook.com/john.doe",
-			"linkedin":"https://www.linkedin.com/in/johndoe/",
-			"twitter":"https://twitter.com/johndoe",
-			"soundcloud":"https://soundcloud.com/johndoe",
+			"email":"hi@ugobriasco.me",
+			"fb":"https://www.facebook.com/ugo.briasco",
+			"linkedin":"https://www.linkedin.com/in/ugobriasco/",
+			"twitter":"https://twitter.com/ugobriasco",
+			"soundcloud":"https://soundcloud.com/exorithmic",
 			"youtube":"#",
-			"github":"https://github.com/johndoe",
+			"github":"https://github.com/ugobriasco",
 			"xing":"#"
 		}
 	},
 	"education":[
 		{
-			"title": "M.Sc. Informatics",
+			"title": "M.Sc. Bioengineering - Neural Engineering",
 			"startDate": "Feb.2009",
 			"endDate": "Jul.2011",
 			"company": {
-				"name":"TU Berlin",
-				"logo":"#",
-				"website":"#"
+				"name":"University of Genova",
+				"logo":"./docs/img/resume/unige.png",
+				"website":"https://unige.it/"
+			},
+			"isCurrent": false,
+		    "location": {
+		    	"country": "Italy",
+		    	"city": "Genova"
+		    },
+			"tag": [],
+			"summary":""
+		},
+		{
+			"title": "Exchange Program (ERASMUS)",
+			"startDate": "Oct.2009",
+			"endDate": "Feb.2010",
+			"company": {
+				"name":"Technische Universität Berlin",
+				"logo":"./docs/img/resume/tuberlin.png",
+				"website":"http://www.tu-berlin.de/menue/home/"
 			},
 			"isCurrent": false,
 		    "location": {
@@ -47,18 +65,18 @@
 			"summary":""
 		},
 		{
-			"title": "B.Sc. Informatics",
+			"title": "B.Sc. Biomedical Engineering",
 			"startDate": "Oct.2005",
 			"endDate": "Feb.2009",
 			"company": {
-				"name":"University of Honolulu",
-				"logo":"#",
-				"website":"#"
+				"name":"University of Genova",
+				"logo":"./docs/img/resume/unige.png",
+				"website":"https://unige.it/"
 			},
 			"isCurrent": false,
 		    "location": {
-		    	"country": "USA",
-		    	"city": "Honolulu"
+		    	"country": "Italy",
+		    	"city": "Genova"
 		    },
 			"tag": [],
 			"summary":""
@@ -68,40 +86,124 @@
 
 	"jobs":[
 		{
-			"title": "Senior UX Developer",
-			"startDate": "Jan 2016 ",
-			"endDate": "Oct 2016",
+			"title": "Engineering Manager",
+			"startDate": "Oct.2016",
+			"endDate": "Jan.2016",
 			"company": {
-				"name":"MatchYourTIE",
-				"logo":"#",
-				"website":"http://matchyourtie.com"
+				"name":"Roche Diagnostics",
+				"logo":"./docs/img/resume/roche.png",
+				"website":"https://www.roche.com/about/business/diagnostics.html"
 			},
 			"isCurrent": true,
 		    "location": {
 		    	"country": "Germany",
 		    	"city": "Berlin"
 		    },
-			"tag": ["SW Dev","Guru"],
-			"summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. "
+			"tag": ["sw testing","line","risk management"],
+			"summary":"Team Lead Software Verification and Validation<br>Product Risk Manager SWISSLAB LIS"
 		},
 		{
-			"title": "Web Designer",
-			"startDate": "Aug.2012",
-			"endDate": "Nov.2012",
+			"title": "Senior Validation Engineer",
+			"startDate": "Jan 2016 ",
+			"endDate": "Oct 2016",
 			"company": {
-				"name":"matchyourTIE",
-				"logo":"#",
-				"website":"http://matchyourtie.com"
+				"name":"Roche Diagnostics",
+				"logo":"./docs/img/resume/roche.png",
+				"website":"https://www.roche.com/about/business/diagnostics.htm"
 			},
 			"isCurrent": false,
 		    "location": {
-		    	"city": "Berlin",
+		    	"country": "Germany",
+		    	"city": "Berlin"
+		    },
+			"tag": ["sw testing","test management"],
+			"summary":"Team Lead a.i.<br>Test Manager<br>Process trainer - V&V, Issue Tracking, Agile Testing of SWISSLAB - Lab. Information System for Clinical Chemistry<br>Blood Bank and Microbiology"
+		},
+		{
+			"title": "Test Engineer",
+			"startDate": "Aug.2014",
+			"endDate": "Jan.2016",
+			"company": {
+				"name":"Roche Diagnostics",
+				"logo":"./docs/img/resume/roche.png",
+				"website":"https://www.roche.com/about/business/diagnostics.htm"
+			},
+			"isCurrent": false,
+		    "location": {
+		    	"country": "Germany",
+		    	"city": "Berlin"
+		    },
+			"tag": ["sw testing","test management"],
+			"summary":"Test Manager<br>HP ALM Tool and Reporting Coach<br>Process trainer - V&V, Issue Tracking<br>Agile Testing of SWISSLAB - Lab. Information System for Clinical Chemistry, Blood Bank and Microbiology"
+		},
+		{
+			"title": "Engineer Quality - System Integration",
+			"startDate": "Jan.2013",
+			"endDate": "Jun.2014",
+			"company": {
+				"name":"Roche Diagnostics",
+				"logo":"./docs/img/resume/roche.png",
+				"website":"https://www.roche.com/about/business/diagnostics.htm"
+			},
+			"isCurrent": false,
+		    "location": {
+		    	"country": "Switzerland",
+		    	"city": "Rotkreuz"
+		    },
+			"tag": ["sw testing"],
+			"summary":"External Consultant for Roche Diagnostics<br>Requirement analysis and test case design for software, hardware and consumables development.<br>Informal and formal testing and test results analysis, reporting and tracking issues, such as verifying fixes.<br>Assisting the Test Manager/Department Project Leader with the creation of required test documentation (e.g., test plans and test reports).<br>Ensuring adherence to relevant QAPs, SOPs and providing input to continually improve V&V processes."
+		},
+				{
+			"title": "Development Engineer",
+			"startDate": "Aug.2012",
+			"endDate": "Nov.2012",
+			"company": {
+				"name":"ITK-Engineering AG",
+				"logo":"./docs/img/resume/itk.png",
+				"website":"http://www.itk-engineering.de/en/home/"
+			},
+			"isCurrent": false,
+		    "location": {
+		    	"city": "Herxheim",
 		    	"country": "Germany"
 		    },
-			"tag": ["SW Dev","Guru"],
-			"summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. "
+			"tag": ["sw development", "LabVIEW"],
+			"summary":"Software development, data acquisition and signal processing (LabVIEW) for embedded sensors.<br>Code-Optimization (LabVIEW) under the NI-Guidelines."
+		},
+		{
+			"title": "Internship – Ultrasound Technology",
+			"startDate": "Oct.2011",
+			"endDate": "Mar.2012",
+			"company": {
+				"name":"JWI-Charité Hospital",
+				"logo":"./docs/img/resume/charite.png",
+				"website":"https://jwi.charite.de/en/"
+			},
+			"isCurrent": false,
+		    "location": {
+		    	"country": "Germany",
+		    	"city": "Berlin"
+		    },
+			"tag": ["biotech", "stem cells", "Ultrasound Technology"],
+			"summary":"Studying the effects of LIPUS (Low Intensity Pulsed Ultrasounds) on Mesenchymal Stromal Cells for bone regeneration"
+		},
+		{
+			"title": "Internship – Tissue Engineering",
+			"startDate": "Nov.2010",
+			"endDate": "Jul.2011",
+			"company": {
+				"name":"University Hospital Basel",
+				"logo":"./docs/img/resume/unispitalbasel.png",
+				"website":"https://www.unispital-basel.ch/"
+			},
+			"isCurrent": false,
+		    "location": {
+		    	"country": "Switzerland",
+		    	"city": "Basel"
+		    },
+			"tag": ["biotech", "stem cells", "Tissue Engineering"],
+			"summary":"Designed a streamlined manufacturing system for bone regeneration, using freshly isolated Adipose Tissue Stromal Cells. Produced Bio-Artificial scaffolds suitable in perfusion bioreactors. Acquired working autonomy in biosafety level 2 laboratories."
 		}
-		
 
 	],
 	"skills":[
@@ -128,7 +230,7 @@
 			"group_name":"Management",
 			"group_color":"",
 			"group_skills": [
-				{"name":"Project Management","value":"90%"},
+				{"name":"Test Management","value":"90%"},
 				{"name":"Leading People","value":"50%"},
 				{"name":"Risk Management","value":"80%"}
 			]
@@ -136,16 +238,16 @@
 	],
 	"certificates":[
 		{
-			"title": "IBM Certified Developer - Foundation Level",
+			"title": "ISTQB Certified Tester - Foundation Level",
 			"date": "Apr.2014",
 			"company": {
-				"name":"IBM",
-				"logo":"#",
-				"website":"#"
+				"name":"Swiss Assocition of Quality",
+				"logo":"./docs/img/resume/saq.png",
+				"website":"http://www.saq.ch/"
 			},
 		    "location": {
-		    	"country": "USE",
-		    	"city": "Honolulu"
+		    	"country": "Switzerland",
+		    	"city": "Bern"
 		    },
 			"tag": [],
 			"summary":""

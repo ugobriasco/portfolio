@@ -1,0 +1,35 @@
+[
+	{
+       "title": "Lorem ipsum",
+       "subtitle": "dolor sit amet", 
+       "color": "#dee7f0", 
+       "cover": "./assets/img/portfolio/tie.png",
+       "thumbnail": "./assets/img/portfolio/mod/m-tie.png",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. Aliquam malesuada finibus tempor. Donec nec vehicula massa. Aliquam blandit lectus metus, non tempor tortor finibus ut. Vestibulum lacus tortor, accumsan at lectus a, dictum iaculis orci. Duis semper libero sed ipsum volutpat, ac imperdiet magna pharetra. Suspendisse aliquam est sit amet nulla sollicitudin luctus placerat eget diam. Donec laoreet turpis quam, quis condimentum nunc facilisis vitae. Pellentesque sodales diam elit, sagittis malesuada nibh pellentesque id.",
+       "tags": ["Lorem", "Ipsum"],
+       "url": "http://www.lipsum.com/feed/html"
+     },
+     {
+       "title": "Dolor sit amet",
+       "subtitle": "consectetur adipiscing elit", 
+       "color": "#fcd40c", 
+       "cover": "./assets/img/portfolio/genio.jpg",
+       "thumbnail": "./assets/img/portfolio/mod/m-genio.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. Aliquam malesuada finibus tempor. Donec nec vehicula massa. Aliquam blandit lectus metus, non tempor tortor finibus ut. Vestibulum lacus tortor, accumsan at lectus a, dictum iaculis orci. Duis semper libero sed ipsum volutpat, ac imperdiet magna pharetra. Suspendisse aliquam est sit amet nulla sollicitudin luctus placerat eget diam. Donec laoreet turpis quam, quis condimentum nunc facilisis vitae. Pellentesque sodales diam elit, sagittis malesuada nibh pellentesque id.",
+       "tags": ["Lorem", "Ipsum"],
+       "url": "http://www.lipsum.com/feed/html"
+     },
+     {
+       "title": "Integer convallis",
+       "subtitle": "convallis sapien in ultrices", 
+       "color": "#2B447F", 
+       "cover": "./assets/img/portfolio/ffiec.png",
+       "thumbnail": "./assets/img/portfolio/mod/m-ffiec.jpg",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis sapien in ultrices vehicula. Maecenas ante erat, facilisis eget ullamcorper ac, scelerisque sed erat. Cras fermentum tincidunt tellus sit amet pretium. Suspendisse potenti. In hac habitasse platea dictumst. Aenean gravida, ante eget sollicitudin laoreet, ex mauris rutrum tortor, a viverra metus mauris non massa. Cras neque tortor, lobortis at sem vitae, scelerisque efficitur sapien. Aliquam malesuada finibus tempor. Donec nec vehicula massa. Aliquam blandit lectus metus, non tempor tortor finibus ut. Vestibulum lacus tortor, accumsan at lectus a, dictum iaculis orci. Duis semper libero sed ipsum volutpat, ac imperdiet magna pharetra. Suspendisse aliquam est sit amet nulla sollicitudin luctus placerat eget diam. Donec laoreet turpis quam, quis condimentum nunc facilisis vitae. Pellentesque sodales diam elit, sagittis malesuada nibh pellentesque id.",
+       "tags": ["Lorem", "Ipsum"],
+       "url": "http://www.lipsum.com/feed/html"
+     }
+
+]
+
+

@@ -13,8 +13,5 @@
 		"consumerSecret": "TWITTER_SECRET",
 		"accessToken":"TWITTER_TOKEN",
 		"accesTokenSecret": "TWITTER_TOKEN_SECRET"
-	},
-	"formspree":{
-		"email":"hi@ugobriasco.me"
 	}
 }
