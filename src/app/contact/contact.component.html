@@ -6,7 +6,7 @@
 		  </div>
 		  <div *ngIf="messageSentError" class="alert alert-warning alert-dismissible">
 		  
-		    <strong>Failed to send message</strong>, please try again later or contact me directly via <a href="mailto:hi@ugobriasco.me?Subject=Hello%20again" target="_top">email</a>
+		    <strong>Failed to send message</strong>, please try again later or contact me directly via <a href="mailto:{{email}}" target="_top">email</a>
 		</div>
 		<form [formGroup] ="emailForm" (ngSubmit)="onSubmit(emailForm)" id="contact">
 			<div class="form-group form-group-lg">

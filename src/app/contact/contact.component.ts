@@ -13,6 +13,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ContactComponent implements OnInit {
 
+  email: string;
 	emailForm: FormGroup;
 	messageSentSuccess: boolean;
   messageSentError: boolean;
@@ -32,7 +33,9 @@ export class ContactComponent implements OnInit {
 
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.email = this.service.getEmail();
+  }
 
 
 
