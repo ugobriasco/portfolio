@@ -7,10 +7,10 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ContactService {
 
-  email ='';
+  _email ='';
 
   constructor(private http: Http) {
-    this.http.get('./docs/config.json').subscribe(res => this.email = res.json().formspree.email);
+    this.http.get('./docs/config.json').subscribe(res => this._email = res.json().formspree.email);
 
   
   }
@@ -23,10 +23,8 @@ postEmail(name: String, email: String, message: String): Observable<string>{
     });
     let options = new RequestOptions({ headers: headers });
 
-    let url = `http://formspree.io/${this.email}`;
+    let url = `http://formspree.io/${this._email}`;
     let data = `name=${name}&email=${email}&message=${message}`;
-
-    
     
     return this.http.post(url, data, options)
     .map(response => {
@@ -39,11 +37,16 @@ postEmail(name: String, email: String, message: String): Observable<string>{
 }
 
 
-getEmail(){
-  console.log(this.email);
-  return this.email;
+getEmail(): Observable<string>{
+  return this.http.get('./docs/config.json').map(res => {
 
+    console.log(res.json().formspree.email);
+
+
+    return res.json().formspree.email});
   
+
+
 }
 
 private handleError(err){

@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.email = this.service.getEmail();
+    this.service.getEmail().subscribe(res => this.email = res);
   }
 
 
