@@ -10,6 +10,6 @@
 		"accesTokenSecret": "TWITTER_TOKEN_SECRET"
 	},
 	"formspree":{
-		"email":"YOUR_EMAIL_HERE"
+		"email":"YOUR_MAIL_HERE"
 	}
 }
