@@ -2,28 +2,28 @@
 V2 is an API friendly V-Card portfolio website.
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
-Author: UgoBriasco (hi@ugobriasco.me)
-
 # Release Notes
-V2 release 0.1
+V2 pre-release 0.5
 
 ## Features 
-**v0.1**
+**v0.5**
 - Profile data loaded from external .json files under ./docs
 - profile data (resume, portfolio) can be entered using markdown
 - contact form sends emails via formspree.io
-- the section "press" contains user's twitts/retwitts
-
+- the section "press" contains user's twitts/retwitts, provide via widget
 
 ## Known bugs and limitations
-- the page is not yet optimized for production
+- the section skill graph is not responsive to the content
 - missing input validation empty contact form
+- no test coverage, yet
 
-# Depoly information
+# Depolyment information
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+Add the `./docs directory to provide your personal data
 
 ## Running unit tests
 
