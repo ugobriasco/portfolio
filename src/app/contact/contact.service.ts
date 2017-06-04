@@ -40,7 +40,7 @@ postEmail(name: String, email: String, message: String): Observable<string>{
 getEmail(): Observable<string>{
   return this.http.get('./docs/config.json').map(res => {
 
-    console.log(res.json().formspree.email);
+
 
 
     return res.json().formspree.email});
