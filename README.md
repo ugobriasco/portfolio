@@ -19,11 +19,15 @@ V2 pre-release 0.5
 
 # Depolyment information
 
+## Installation
+
+- Install dependancies via `npm install`
+- run the build server `ng serve`
+
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-Add the `./docs directory to provide your personal data
+- Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+- Add the `./docs directory to provide your personal data
 
 ## Running unit tests
 
