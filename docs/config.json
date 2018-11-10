@@ -1,0 +1,20 @@
+{
+	"mailgun":{
+		"url": "MAILGUN_URL_HERE",
+		"apiKey": "MAILGUN_APIKEY_HERE",
+		"email": "YOUR_EMAIL_HERE"
+	},
+	"linkedin":{
+		"url": "LINKEDIN_URL_HERE",
+		"apiKey": "LINKEDIN_API_KEY_HERE"
+	},
+	"twitter":{
+		"consumerKey": "TWITTER_KEY",
+		"consumerSecret": "TWITTER_SECRET",
+		"accessToken":"TWITTER_TOKEN",
+		"accesTokenSecret": "TWITTER_TOKEN_SECRET"
+	},
+	"formspree":{
+		"email":"hi@ugobriasco.me"
+	}
+}

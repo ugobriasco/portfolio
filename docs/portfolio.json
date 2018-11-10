@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Grocerybot",
+    "subtitle": "Make grocerylists smarter", 
+    "color": "#3714B0", 
+    "cover": "./docs/img/portfolio/mod/m-grocerybot.png",
+    "thumbnail": "./docs/img/portfolio/mos-grocerybot.png",
+    "description": "Grocerybot is a Restful API which support the creation of multilingual grocery lists, making the daily life of expats, multilingual families (like mine), or international shared flats a bit easier. The complete solution includes a backend web interface (made in Angular 4x) and a simple Android/iOS app - made with react-native.",
+    "tags": ["Fullstack Dev", "HomeTech", "Node", "Angular","React-Native"],
+    "url": "https://github.com/ugobriasco/grocerybot-server",
+    "year":2017
+  },
+  {
+    "title": "Go-Gantt",
+    "subtitle": "Build Gantt graphs using Angular",
+    "color": "#00BD39",
+    "cover": "./docs/img/portfolio/mod/m-go-gantt.png",
+    "thumbnail": "./docs/img/portfolio/mos-go-gantt.png",
+    "description":"In 2016 I couldn't find out a simple tool to design e quick Gantt Graph, therefore I decided to create my own. This small application is designed with Angular application using the Google Graphs api.",
+    "tags": ["UI Dev", "Productivity", "Angular"],
+    "url":"https://github.com/ugobriasco/go-gantt",
+    "year":2016
+  },
+  {
+    "title": "Grow",
+    "subtitle": "Design a valid subscription based business model",
+    "color": "#FF2300",
+    "cover": "./docs/img/portfolio/mod/m-grow.png",
+    "thumbnail": "./docs/img/portfolio/mos-grow.png",
+    "description":"This Angular web-tool helps to design subscription based business. It generates a simple model of the revenue stream, based on some strategical decision (e.g. how much invest in customer acquisition) and cohort analysis.",
+    "tags": ["UI Dev", "FinTech", "Angular"],
+    "url":"https://github.com/ugobriasco/grow",
+    "year":2016
+  },
+  {
+     "title": "MatchYourTIE",
+     "subtitle": "My window to the startup enviroment", 
+     "color": "#FFD200", 
+     "cover": "./docs/img/portfolio/mod/m-tie.png",
+     "thumbnail": "./docs/img/portfolio/mos-tie.png",
+     "description": "On easter 2012 I started my own long-term entrepreneural program: a delocalized startup accelerator which integrates the metodology proper of a business incubator with the web 2.0. MatchYourTIE.com - Technology, Innovation, Entrepreneurship collects, evaluates and shares the most actual tools and technologies from entrepreneurs to entrepreneurs.",
+     "tags": ["Entrepreneurship", "Technology"],
+     "url": "matchyourtie.com",
+     "year":2015
+  }
+
+  
+
+
+]
